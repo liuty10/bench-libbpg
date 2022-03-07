@@ -2,11 +2,11 @@
 
 This repo is for benchmarking bpg
 
-# How to use
+# How to install
 - download, configure, make and make install PNG 1.6
 ```
-wget -O libpng-1.6.37.tar.xz
-tar xf libpng-1.6.37.tar.xz
+wget -O libpng-1.6.37.tar.gz
+tar xf libpng-1.6.37.tar.gz
 ./configure --help
 ./configure
 make -j
@@ -30,3 +30,13 @@ Then, compile
 make -j 6 sudo make install sudo checkinstall sudo ldconfig /usr/local/lib
 ```
 see: https://github.com/liuty10/Things-IamLearning/issues/68
+
+# How to use
+```
+./libbpg-0.9.8/bpgenc -f 444 -q ${qp_value} ${inpng}
+./libbpg-0.9.8/bpgdec out.bpg
+```
+For more help:
+```
+./libbpg-0.9.8/bpgenc -h 
+```
